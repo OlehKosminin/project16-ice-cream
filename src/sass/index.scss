@@ -1,3 +1,4 @@
+@import './components/variable';
 @import './components/normalize';
 @import './components/button';
 @import './common';
@@ -7,9 +8,8 @@
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
-@import './layout/about';
+@import './layout/how-is-made';
 @import './layout/advantages';
-@import './layout/gallery';
-@import './layout/customer-reviews';
+@import './layout/slider';
 @import './layout/contacts';
 @import './layout/footer';
