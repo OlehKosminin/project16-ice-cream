@@ -1,15 +1,15 @@
-@import './layout/normalize';
-@import './layout/button';
+@import './components/normalize';
+@import './components/button';
 @import './common';
 @import './base';
 
 // componenets
-@import './components/header';
-@import './components/hero';
-@import './components/products';
-@import './components/about';
-@import './components/advantages';
-@import './components/gallery';
-@import './components/customer-reviews';
-@import './components/contacts';
-@import './components/footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
