@@ -1,0 +1,71 @@
+// product
+
+.btn-bg-transparent {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.125;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 24px;
+
+  padding: 12px 6px;
+
+  color: var(--bnt-dark-text-color);
+  background-color: transparent;
+  border: 2px solid var(--btn-defolt-bg-color);
+  border-radius: 8px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border: 2px solid var(--btn-hover-bg-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2857;
+
+    width: 138px;
+    height: 42px;
+
+    padding: 12px 36px;
+
+    border-radius: 10px;
+  }
+}
+
+// how its made?
+.btn-all-transparent {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  border: transparent;
+
+  color: var(--btn-defolt-bg-color);
+  background-color: transparent;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--btn-hover-bg-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.214;
+  }
+}
