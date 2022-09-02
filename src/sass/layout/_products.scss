@@ -22,24 +22,75 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #000000;
-    margin-bottom: 40px;
+    margin-bottom: 148px;
 }
 
 .products-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 148px;
 }
 
 .product-one {
+    position: relative;
     background-color: #AEC6A5;
+}
+
+.product-one::before {
+    content: "";
+    position: absolute;
+    border-radius: 250px;
+    width: 200px;
+    height: 200px;
+    background-color: #AEC6A5;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.product-one::after {
+    // content: url(../images/products/product-one.jpg);
+    position: absolute;
+    left: 50%;
+    top: -1%;
+    transform: translate(-50%, -50%);
 }
 
 .product-two {
     background-color: #EFD478;
 }
 
+.product-two::before {
+    content: "";
+    position: absolute;
+    border-radius: 250px;
+    width: 200px;
+    height: 200px;
+    background-color: #EFD478;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .product-three {
     background-color: #D6936D;
+}
+
+.product-three::before {
+    content: "";
+    position: absolute;
+    border-radius: 250px;
+    width: 200px;
+    height: 200px;
+    background-color: #D6936D;
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .products-list__product-name {
@@ -51,6 +102,8 @@
     text-transform: uppercase;
     color: #131313;
     margin-bottom: 40px;
+    margin-top: 0;
+    padding-top: 123px;
 }
 
 .products-list__description {
@@ -63,4 +116,16 @@
     margin-bottom: 90px;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.products-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.products-btn__icon {
+    width: 40px;
+    font-size: 100px;
 }
