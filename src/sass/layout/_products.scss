@@ -52,14 +52,28 @@
 }
 
 .product-one::after {
-    // content: url(../images/products/product-one.jpg);
+    content: "";
+    background-image: url(../images/products/product-one.png);
+    width: 200px;
+    height: 200px;
     position: absolute;
     left: 50%;
-    top: -1%;
+    top: -11px;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        .product-one::after {
+            background-image:url(../images/products/product-one@2x.png);
+        }
+    }
+
 .product-two {
+    position: relative;
     background-color: #EFD478;
 }
 
@@ -76,9 +90,32 @@
     transform: translate(-50%, -50%);
 }
 
+.product-two::after {
+    content: "";
+    background-image: url(../images/products/product-two.png);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: -11px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 51%;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .product-two::after {
+        background-image: url(../images/products/product-two.png);
+    }
+}
+
 .product-three {
+    position: relative;
     background-color: #D6936D;
 }
+
 
 .product-three::before {
     content: "";
@@ -91,6 +128,27 @@
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.product-three::after {
+    content: "";
+    background-image: url(../images/products/product-three.png);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: -11px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 51%;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .product-three::after {
+        background-image: url(../images/products/product-three.png);
+    }
 }
 
 .products-list__product-name {
