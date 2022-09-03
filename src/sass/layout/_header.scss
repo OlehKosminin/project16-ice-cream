@@ -1,16 +1,17 @@
-.header {
-    position: absolute;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: var(--section-bg-color);
-    padding-top: 12px;
-
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.header {
+    position: absolute;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: teal;
+    padding-top: 12px;
+    
+
     @media screen and (max-width: 767px) {
         .mobile-menu-open {
             background-color: transparent;
@@ -21,6 +22,12 @@
         .site-nav,
         .btn-bg__buy-now_desk-tablet {
             display: none;
+        }
+        .btn-bg__buy-now_mobile-menu {
+            margin-top: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {

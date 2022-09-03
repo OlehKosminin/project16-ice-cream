@@ -29,7 +29,11 @@
         <use href="./images/sprite-svg/symbol-arial.svg#burger"></use>
       </svg>
     </button>
-    <button class="btn-bg__buy-now btn-bg__buy-now_desk-tablet" type="button">
+    <button
+      class="btn-bg__buy-now btn-bg__buy-now_desk-tablet click"
+      type="button"
+      data-modal-open
+    >
       <span>Buy now</span> <span class="btn__symbol">&#62;</span>
     </button>
   </div>
@@ -69,14 +73,88 @@
           </ul>
         </nav>
         <button
-          class="btn-bg__buy-now btn-bg__buy-now_mobile-menu"
+          class="btn-bg__buy-now btn-bg__buy-now_mobile-menu click"
           type="button"
+          data-modal-open
         >
           <span>Buy now</span> <span class="btn__symbol">&#62;</span>
         </button>
       </nav>
     </div>
   </div>
+  <!-- Modal window -->
 
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-btn__icon" width="16px" height="16px">
+          <use href="./images/sprite-svg/symbol-arial.svg#close-btn"></use>
+        </svg>
+      </button>
+      <p class="modal__title">Buy now</p>
+      <div class="modal-image-gread">
+        <ul class="modal-cards-list">
+          <li class="modal-cards__items">
+            <a class="modal-cards__links icecream-links">
+              <picture class="modal-cards__image icecream-image">
+                <!-- <source srcset="" media="(min-width: 1200px)" />
+                <source srcset="" media="(min-width: 768px)" /> -->
+                <source
+                  srcset="./images/modal-png-mobile/icecream-mobile-x1-min.png x1,
+                ./images/modal-png-mobile/icecream-mobile-x2-min.png x2
+                "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  src="./images/modal-png-mobile/icecream-mobile-x1-min.png"
+                  alt="Ice cream"
+                />
+              </picture>
+              <p class="modal-cards__title">ice cream</p>
+            </a>
+          </li>
+          <li class="modal-cards__items">
+            <a href="" class="modal-cards__links icecoffee-links">
+              <picture class="modal-cards__image icecoffee-image">
+                <!-- <source srcset="" media="(min-width: 1200px)" />
+                <source srcset="" media="(min-width: 768px)" /> -->
+                <source
+                  srcset="./images/modal-png-mobile/icecoffee-mobile-x1-min.png x1,
+                ./images/modal-png-mobile/icecoffee-mobile-x2-min.png x2
+                "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  src="./images/modal-png-mobile/icecoffee-mobile-x1-min.png"
+                  alt="Ice coffee"
+                />
+              </picture>
+              <p class="modal-cards__title">ice coffee</p>
+            </a>
+          </li>
+          <li class="modal-cards__items">
+            <a href="" class="modal-cards__links milkshake-links">
+              <picture class="modal-cards__image milkshake-image">
+                <!-- <source srcset="" media="(min-width: 1200px)" />
+                <source srcset="" media="(min-width: 768px)" /> -->
+                <source
+                  srcset="./images/modal-png-mobile/milkshake-mobile-x1-min.png x1,
+                ./images/modal-png-mobile/milkshake-mobile-x2-min.png x2
+                "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  src="./images/modal-png-mobile/milkshake-mobile-x1-min.png"
+                  alt="Milkshake"
+                />
+              </picture>
+              <p class="modal-cards__title">milkshake</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="./modal-buy-now.js"></script>
   <script src="./mobile-menu.js"></script>
 </header>

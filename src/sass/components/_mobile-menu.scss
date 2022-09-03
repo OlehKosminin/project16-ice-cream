@@ -32,7 +32,6 @@
     background-color: #85A279;
     padding-top: 100px;
     display: block;
-    // align-items: center;
     text-align: center;
 }
 .mobile-menu__close-btn {
@@ -64,6 +63,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .mobile-menu__close-btn {
