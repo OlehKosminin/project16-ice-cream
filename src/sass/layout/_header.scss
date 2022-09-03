@@ -1,0 +1,66 @@
+.header {
+    position: absolute;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--section-bg-color);
+    padding-top: 12px;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    @media screen and (max-width: 767px) {
+        .mobile-menu-open {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            line-height: 0;
+        }
+        .site-nav,
+        .btn-bg__buy-now_desk-tablet {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .mobile-menu-open {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            line-height: 0;
+            margin-right: 31px;
+            margin-left: auto;
+        }
+        .site-nav {
+            display: none;
+        }
+        
+    }
+    @media screen and (min-width: 1200px) {
+        
+        .mobile-menu-open {
+            display: none;
+        }
+        .site-nav {
+            margin-right: 146px;
+            margin-left: auto;
+        }
+        .site-nav__list {
+            display: flex;
+        }
+        .site-nav__items:not(:first-child) {
+            margin-left: 27px;
+        }
+        .site-nav__links {
+            color: var(--text-color-light);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.25;
+            &:hover,
+            &:focus {
+                color: var(--acent-color);
+            }
+        }
+    }
+}
