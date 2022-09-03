@@ -1,0 +1,55 @@
+.hero {
+    background-color: var(--section-bg-color);
+}
+
+.hero__container {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 239px;
+    background-image: url(../images/hero/hero_bg_Mobaile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+
+
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
+    screen and (min-resolution: 192dpi) and (max-width: 768px),
+    screen and (min-resolution: 2dppx) and (max-width: 768px) {
+        background-image: url(../images/hero/hero_bg_Mobaile@2x.png);
+    }
+}
+
+.hero__title {
+    max-width: 247px;
+    width: 100%;
+
+    margin-bottom: 32px;
+
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.hero__container-btn {
+    display: flex;
+    row-gap: 8px;
+}
+
+.hero__info {
+    display: none;
+}
+
+.hero__img {
+    position: absolute;
+    bottom: 0;
+    left: 82px;
+
+    filter: drop-shadow(0px 0px 35px rgba(252, 252, 252, 0.44));
+}
+
+.hero__numbers-info {
+    display: none;
+}
