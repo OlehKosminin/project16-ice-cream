@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 60px;
+  min-width: 64px;
   min-height: 24px;
 
   padding: 12px 6px;
@@ -28,7 +28,7 @@
 
   &:focus {
     font-weight: 700;
-    font-size: 15px;
+    font-size: 9px;
     line-height: 1.2;
   }
   @media screen and (min-width: 1200px) {
@@ -42,9 +42,14 @@
     padding: 12px 36px;
 
     border-radius: 10px;
+
+    &:focus {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.2;
+    }
   }
 }
-
 // how its made?
 .btn-all-transparent {
   font-family: 'Montserrat';
@@ -72,7 +77,7 @@
 
   &:focus {
     font-weight: 700;
-    font-size: 15px;
+    font-size: 9px;
     line-height: 1.2;
   }
 
@@ -80,6 +85,12 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.214;
+
+    &:focus {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.2;
+    }
   }
 }
 
