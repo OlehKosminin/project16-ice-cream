@@ -1,11 +1,16 @@
 .products {
   padding-top: 60px;
   padding-bottom: 40px;
+  background-image: url(../images/products/products-bg-mobile-1.png),
+    url(../images/products/products-bg-mobile-2.png),
+    url(../images/products/products-bg-mobile-3.png);
+    background-position: top center, center center, bottom center;
+    background-repeat: no-repeat;
 }
 
 .products-description {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 18px;  
   line-height: 1.23;
   text-align: center;
   text-transform: uppercase;
@@ -238,13 +243,13 @@
     background-size: cover;
   }
 
-    @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
     screen and (min-resolution: 192dpi) and (max-width: 1199px),
     screen and (min-resolution: 2dppx) and (max-width: 1199px) {
-      .products {
-        background-image: url(../images/products/products-bg-tablet@2x.png);
-      }
+    .products {
+      background-image: url(../images/products/products-bg-tablet@2x.png);
     }
+  }
 
   .products-description {
     font-size: 22px;
@@ -318,13 +323,13 @@
     background-image: url(../images/products/products-bg-desktop.png);
   }
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-      .products {
-        background-image: url(../images/products/products-bg-desktop@2x.png);
-      }
+    .products {
+      background-image: url(../images/products/products-bg-desktop@2x.png);
     }
+  }
 
   .products-description {
     font-size: 30px;
