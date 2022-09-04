@@ -9,10 +9,12 @@
     transition-property: opacity, visibility;
     transition-duration: var(--transition-duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    overflow-y: scroll;
     &.is-hidden {
         visibility: hidden;
         pointer-events: none;
         opacity: 0;
+    }
+    @media screen and (max-width: 1199px) {
+        overflow-y: scroll;
     }
 }

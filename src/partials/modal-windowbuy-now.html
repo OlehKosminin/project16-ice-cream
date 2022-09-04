@@ -1,0 +1,154 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-btn__icon">
+        <use href="./images/sprite-svg/symbol-arial.svg#close-btn"></use>
+      </svg>
+    </button>
+    <form class="modal-form-coctail">
+      <p class="modal__title">Buy now</p>
+      <div class="modal-image-gread">
+        <ul class="modal-cards-list">
+          <li class="modal-cards__items">
+            <input
+              id="icecream-check"
+              type="checkbox"
+              name="cocktail-check"
+              class="modal-form-check_icecream hidden-title"
+            />
+            <label
+              for="icecream-check"
+              class="modal-cards__links icecream-links"
+            >
+              <picture class="modal-cards__image icecream-image">
+                <source
+                  srcset="./images/modal-png-tabdesk/icecream-tabdesk-x1-min.png x1,
+                ./images/modal-png-tabdesk/icecream-tabdesk-x2-min.png x2"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/modal-png-mobile/icecream-mobile-x1-min.png x1,
+                ./images/modal-png-mobile/icecream-mobile-x2-min.png x2
+                "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/modal-png-mobile/icecream-mobile-x1-min.png"
+                  alt="Ice cream"
+                />
+              </picture>
+              <p class="modal-cards__title">ice cream</p>
+            </label>
+          </li>
+          <li class="modal-cards__items">
+            <input
+              id="icecoffee-check"
+              type="checkbox"
+              name="cocktail-check"
+              class="modal-form-check_icecoffee hidden-title"
+            />
+            <label
+              for="icecoffee-check"
+              class="modal-cards__links icecoffee-links"
+            >
+              <picture class="modal-cards__image icecoffee-image">
+                <source
+                  srcset="./images/modal-png-tabdesk/icecoffee-tabdesk-x1-min.png x1,
+                ./images/modal-png-tabdesk/icecoffee-tabdesk-x2-min.png x2"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/modal-png-mobile/icecoffee-mobile-x1-min.png x1,
+                ./images/modal-png-mobile/icecoffee-mobile-x2-min.png x2
+                "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/modal-png-mobile/icecoffee-mobile-x1-min.png"
+                  alt="Ice coffee"
+                />
+              </picture>
+              <p class="modal-cards__title">ice coffee</p>
+            </label>
+          </li>
+          <li class="modal-cards__items">
+            <input
+              id="milkshake-check"
+              type="checkbox"
+              name="cocktail-check"
+              class="modal-form-check_milkshake hidden-title"
+            />
+            <label
+              for="milkshake-check"
+              class="modal-cards__links milkshake-links"
+            >
+              <picture class="modal-cards__image milkshake-image">
+                <source
+                  srcset="./images/modal-png-tabdesk/milkshake-tabdesk-x1-min.png x1,
+                ./images/modal-png-tabdesk/milkshake-tabdesk-x2-min.png x2"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/modal-png-mobile/milkshake-mobile-x1-min.png x1,
+                            ./images/modal-png-mobile/milkshake-mobile-x2-min.png x2
+                "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/modal-png-mobile/milkshake-mobile-x1-min.png"
+                  alt="Milkshake"
+                />
+              </picture>
+              <p class="modal-cards__title">milkshake</p>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-form-input-gread">
+        <label class="modal-form-coctail-label">
+          <span class="modal-form-coctail-input-wrapper">
+            <input
+              type="text"
+              name="user_name"
+              class="modal-form-coctail-inpt"
+              pattern="^[a-zA-zа-яА-я]+$"
+              minlength="2"
+              placeholder="Name"
+              required
+            />
+          </span>
+        </label>
+        <label class="modal-form-coctail-label">
+          <span class="modal-form-coctail-input-wrapper">
+            <input
+              type="tel"
+              name="user_phone"
+              class="modal-form-coctail-inpt"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              placeholder="Phone"
+              required
+            />
+          </span>
+        </label>
+        <label class="modal-form-coctail-label">
+          <span class="modal-form-coctail-input-wrapper">
+            <textarea
+              name="user_massage"
+              cols="30"
+              rows="3"
+              class="modal-form-coctail-inpt massage"
+              placeholder="Comment"
+            ></textarea>
+          </span>
+        </label>
+      </div>
+      <div class="modal-button-form-wrapper">
+        <button class="btn-bg__buy-now btn-bg__submit" type="button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="./modal-buy-now.js"></script>

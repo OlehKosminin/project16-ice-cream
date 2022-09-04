@@ -8,28 +8,53 @@
     background: #FFFFFF;
     border: 2px solid #F8D24E;
     border-radius: 10px;
-    overflow-y: scroll;
+    @media screen and (max-width: 1199px) {
+        overflow-y: scroll;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 568px;
+    }
 
 }
 .modal-image-gread {
     display: flex;
     justify-content: center;
-    padding-top: 72px;
+    padding-top: 83px;
     padding-bottom: 24px;
+    
 }
+@media screen and (min-width: 768px) {
+    .modal-cards-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    .modal-image-gread {
+        padding-top: 103px;
+        padding-bottom: 40px;
+        
+    }
+}
+
 .modal-close-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 16px;
+    height: 16px;
     top: 8px;
     right: 8px;
     background-color: transparent;
     padding: 0;
     border: none;
+    @media screen and (min-width: 768px) {
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .modal__title {
@@ -39,15 +64,21 @@
     font-size: 16px;
     line-height: 1.5;
     color: #000;
-    margin-top: 28px;
-    margin-bottom: 20px;
+    padding-top: 28px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
 }
 
-
-.modal-cards__items:not(:first-child) {
-    margin-top: 83px;
+@media screen and (max-width: 767px) {
+    .modal-cards__items:not(:first-child) {
+        margin-top: 83px;
+    }
 }
+
 
 .modal-cards__image {
     position: absolute;
@@ -120,6 +151,7 @@
 }
 .icecoffee-links.modal-cards__links {
     border: 2px solid #EFD478;
+    cursor: pointer;
     .modal-form-check_icecoffee:checked + &
     {
         background-color: #EFD478;
@@ -127,6 +159,7 @@
 }
 .milkshake-links.modal-cards__links {
     border: 2px solid #D6936D;
+    cursor: pointer;
     .modal-form-check_milkshake:checked + &
     {
         background-color: #D6936D;
@@ -142,9 +175,16 @@
     gap: 12px;
     align-items: center;
     padding-bottom: 24px;
+    @media screen and (min-width: 768px) {
+        gap: 16px;
+        padding-bottom: 32px;
+    }
 }
 .modal-form-coctail-inpt {
     width: 224px;
+    @media screen and (min-width: 768px) {
+        width: 368px;
+    }
 }
 .modal-form-coctail-inpt {
     background: rgba(248, 210, 78, 0.1);
@@ -165,11 +205,17 @@
     display: flex;
     justify-content: center;
     padding-bottom: 28px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 32px;
+    }
 }
 .btn-bg__buy-now.btn-bg__submit {
     display: block;
     text-align: center;
 }
+
+
+
 //  Hidden
 .hidden-title {
     position: absolute; 
