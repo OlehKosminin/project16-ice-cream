@@ -1,15 +1,26 @@
 .contacts{
+    padding-bottom: 40px;
     background: #84A178;
+    @media screen and (min-width: 1200px) {
+            padding-bottom: 132px;
+        }
 }
 .contacts-information-list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+
+    
+
     gap: 20px;
     @media screen and (min-width: 768px){
         gap: 16px;
+        margin-bottom: 60px;
     }
     @media screen and (min-width: 1200px){
         gap: 32px;
+        margin-bottom: 76px;
     }
     
 }
@@ -39,18 +50,30 @@
         width: calc((100% - 64px)/3);
     }
 }
+.contacts-location-list{
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    @media screen and (min-width: 768px){
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+    }
+}
 .contacts-location-list__item-name{
+    display: inline-block;
+    padding-right: 22px;
+    padding-left: 22px;
+    margin-bottom: 20px;
     background-color: var(--acent-color);
     font-family: var(--front-font);
     font-weight: 500;
-    line-height: 186%;
+    line-height: 1.8;
     letter-spacing: 0.04em;
     @media screen and (max-width: 767px) {
-        width: 80px;
-        height: 16px;
+      
+        
         
         font-size: 12px;
-        line-height: 186%;
+        
         
         text-align: center;
         
@@ -59,8 +82,8 @@
         border-radius: 4px;
     }
     @media screen and (min-width: 768px){
-        width: 73px;
-        height: 28px;
+        margin-bottom: 32px;
+       
       
             font-size: 16px;
         
@@ -71,4 +94,141 @@
             border-radius: 6px;
     }
     @media screen and (min-width: 1200px) {}
+}
+// .contacts-food_truck{
+//     @media screen and (max-width: 767px){
+//         width: 130px;
+//     }
+//     @media screen and (min-width: 768px){
+//         width: 138px;
+//     }
+// }
+.contacts-location-list__item-sity{
+    margin-bottom: 8px;
+    font-family: var(--front-font);
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1,8;
+        
+    
+    letter-spacing: 0.04em;
+    
+    color: #000000;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+}
+.contacts-location-list__item-address{
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+
+    font-family: var(--front-font);
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1,8;
+    
+    letter-spacing: 0.04em;
+    
+    color: #D6936D;
+    @media screen and (min-width: 768px) {
+        // margin-bottom: 32px;
+        // padding-bottom: 32px;
+        font-size: 14px;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+.contacts-opening_hours-list{
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+    }
+}
+.contacts-opening_hours-list__item-days{
+    font-family: var(--front-font);
+        
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+        
+    
+    
+    color: #000000;
+    @media screen and (min-width: 768px) { 
+            font-size: 14px;
+            color: var(--text-color-black);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            color: #000000;
+        }
+}
+.contacts-opening_hours-list__item{
+    font-family: var(--front-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+        
+    
+    
+    color: #ABABAB;
+    @media screen and (min-width: 768px) {
+            font-size: 14px;
+            color: #907E82;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            color: #ABABAB;
+        }
+}
+.contacts-opening_hours-box-weekdays{
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px){
+        margin-bottom: 12px;
+    }
+}
+.contacts-menu-list__item-link{
+    font-family: var(--front-font);
+        
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+        
+    color: var(--text-color-black);
+    @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 1.9;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+}
+.contacts-btn-list{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    @media screen and (min-width: 768px) {
+            gap: 16px;
+        }
+
 }
