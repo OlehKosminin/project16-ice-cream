@@ -8,7 +8,7 @@
                 </button>
             </li>
             <li class="hero__wrapper-btn">
-                <button class="btn-all-transparent" type="button">
+                <button class="btn-all-transparent hero__btn-all-transparent_size" type="button">
                     How it’s made?
                 </button>
             </li>
@@ -32,12 +32,15 @@
                     <img src="./images/hero/hero_plateOfIceCream_Desktop.png" alt="a plate of ice cream"
                         class="hero__info-img">
                 </picture>
+
             </li>
             <li class="hero__info-wrapper">
                 <p class="hero__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et</p>
-                <button>
-                    arrow
+                <button class="hero__arrow-btn">
+                    <svg class="hero__arrow" width="40" height="20">
+                        <use href="./images/sprite-svg/symbol-vector.svg#icon-arrow_defolt"></use>
+                    </svg>
                 </button>
             </li>
         </ul>
@@ -47,9 +50,11 @@
             <source srcset="./images/hero/hero_iceCream_Mobile.png 1x, ./images/hero/hero_iceCream_Mobile@2x.png 2x"
                 media="(max-width: 767px)" />
 
-            <source srcset="./images/hero/hero_iceCream_Desktop.webp 1x, ./images/hero/hero_iceCream_Desktop@2x.webp 2x"
+            <source
+                srcset="./images/hero/hero_iceCream_Desktop_new.webp 1x, ./images/hero/hero_iceCream_Desktop_new@2x.webp 2x"
                 media="(min-width: 1200px)" type="image/webp" />
-            <source srcset="./images/hero/hero_iceCream_Desktop.png 1x, ./images/hero/hero_iceCream_Desktop@2x.png 2x"
+            <source
+                srcset="./images/hero/hero_iceCream_Desktop_new.png 1x, ./images/hero/hero_iceCream_Desktop_new@2x.png 2x"
                 media="(min-width: 1200px)" />
 
             <source srcset="./images/hero/hero_iceCream_Tablet.webp 1x, ./images/hero/hero_iceCream_Tablet@2x.webp 2x"
@@ -57,7 +62,7 @@
             <source srcset="./images/hero/hero_iceCream_Tablet.png 1x, ./images/hero/hero_iceCream_Tablet@2x.png 2x"
                 media="(min-width: 768px)" />
 
-            <img src="./images/hero/hero_iceCream_Desktop.png" alt="an ice cream cone" class="hero__img">
+            <img src="./images/hero/hero_iceCream_Desktop_new.png" alt="an ice cream cone" class="hero__img">
         </picture>
         <ul class="hero__numbers-info">
             <li class="hero__number-wrapper">
