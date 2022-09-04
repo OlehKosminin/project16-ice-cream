@@ -1,0 +1,86 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="./index.html" class="logo">
+      <svg class="logo_svg" width="40" height="37">
+        <use href="./images/sprite-svg/symbol-arial.svg#icelogo"></use>
+      </svg>
+    </a>
+    <nav class="site-nav">
+      <ul class="site-nav__list">
+        <li class="site-nav__items">
+          <a href="#home" class="site-nav__links">Home</a>
+        </li>
+        <li class="site-nav__items">
+          <a href="#about-us" class="site-nav__links">About us</a>
+        </li>
+        <li class="site-nav__items">
+          <a href="#how-made" class="site-nav__links">How it&#39;s made?</a>
+        </li>
+        <li class="site-nav__items">
+          <a href="#our-products" class="site-nav__links">Our products</a>
+        </li>
+        <li class="site-nav__items">
+          <a href="#contact" class="site-nav__links">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="mobile-menu-open" data-menu-open>
+      <svg class="mobile-menu-open__icon" width="20" height="12">
+        <use href="./images/sprite-svg/symbol-arial.svg#burger"></use>
+      </svg>
+    </button>
+    <button
+      class="btn-bg__buy-now btn-bg__buy-now_desk-tablet click"
+      type="button"
+      data-modal-open
+    >
+      <span>Buy now</span> <span class="btn__symbol">&#62;</span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <a href="" class="logo-mobile">
+        <svg class="logo_svg" width="40" height="37">
+          <use href="./images/sprite-svg/symbol-arial.svg#icelogo"></use>
+        </svg>
+      </a>
+      <button class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icon" width="32" height="32">
+          <use href="./images/sprite-svg/symbol-arial.svg#ep_close"></use>
+        </svg>
+      </button>
+      <nav>
+        <nav class="site-nav-mobile">
+          <ul class="site-nav-mobile__list">
+            <li class="site-nav-mobile__items">
+              <a href="" class="site-nav-mobile__links">Home</a>
+            </li>
+            <li class="site-nav-mobile__items">
+              <a href="" class="site-nav-mobile__links">About us</a>
+            </li>
+            <li class="site-nav-mobile__items">
+              <a href="" class="site-nav-mobile__links">How it&#39;s made?</a>
+            </li>
+            <li class="site-nav-mobile__items">
+              <a href="" class="site-nav-mobile__links">Our products</a>
+            </li>
+            <li class="site-nav-mobile__items">
+              <a href="" class="site-nav-mobile__links">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="btn-bg__buy-now btn-bg__buy-now_mobile-menu click"
+          type="button"
+          data-modal-open
+        >
+          <span>Buy now</span> <span class="btn__symbol">&#62;</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <script src="./mobile-menu.js"></script>
+</header>
