@@ -10,8 +10,8 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 60px;
-  min-height: 24px;
+  min-width: 64px;
+  height: 24px;
 
   padding: 12px 6px;
 
@@ -26,20 +26,30 @@
     border: 2px solid var(--btn-hover-bg-color);
   }
 
+  &:focus {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 1.2;
+  }
   @media screen and (min-width: 1200px) {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2857;
 
     min-width: 138px;
-    min-height: 42px;
+    height: 42px;
 
     padding: 12px 36px;
 
     border-radius: 10px;
+
+    &:focus {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.2;
+    }
   }
 }
-
 // how its made?
 .btn-all-transparent {
   font-family: 'Montserrat';
@@ -65,10 +75,22 @@
     color: var(--btn-hover-bg-color);
   }
 
+  &:focus {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 1.2;
+  }
+
   @media screen and (min-width: 1200px) {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.214;
+
+    &:focus {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.2;
+    }
   }
 }
 
@@ -99,24 +121,30 @@
     background-color: var(--btn-hover-bg-color);
     border: 2px solid var(--btn-hover-bg-color);
   }
+
+  &:focus {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+  }
 }
 
 .btn__symbol {
   margin-left: 18px;
 }
 
-// buy now fw 700
-.btn-bg__buy-now-700 {
+// our location
+.btn-bg__our-lock {
   font-family: 'Montserrat';
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 1.1428;
+  line-height: 1.2857;
 
   display: flex;
   align-items: center;
 
-  min-width: 159px;
-  min-height: 42px;
+  min-width: 196px;
+  height: 42px;
 
   padding: 12px 33px;
 
@@ -132,34 +160,10 @@
     background-color: var(--btn-hover-bg-color);
     border: 2px solid var(--btn-hover-bg-color);
   }
-}
-
-// our location
-.btn-bg__our-lock {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-
-  display: flex;
-  align-items: center;
-
-  min-width: 159px;
-  min-height: 42px;
-
-  padding: 12px 33px;
-
-  color: var(--bnt-dark-text-color);
-  background-color: var(--btn-defolt-bg-color);
-  border: 2px solid var(--btn-defolt-bg-color);
-  border-radius: 8px;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: var(--btn-hover-bg-color);
-    border: 2px solid var(--btn-hover-bg-color);
+  &:focus {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
   }
 }
 .btn__symbol-our-lock {
@@ -177,8 +181,8 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 60px;
-  min-height: 24px;
+  min-width: 196px;
+  height: 42px;
 
   padding: 12px 6px;
 
