@@ -1,11 +1,36 @@
 .contacts{
+    
+
+        
+    // padding-top: 962px;
     padding-bottom: 40px;
     background: #84A178;
+    // @media screen and (min-width: 768px) {
+    //         padding-top: 284px;
+    //     }
     @media screen and (min-width: 1200px) {
+            // padding-top: 506px;
             padding-bottom: 132px;
         }
 }
+.contacts-container{
+    position: relative;
+    height: 100%;
+    padding-top: 962px;
+    @media screen and (min-width: 768px) {
+            padding-top: 284px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            padding-top: 506px;
+            
+        }
+}
 .contacts-information-list{
+    position: absolute;
+    top: -345px;
+    // left: 20px;
+    // right: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -15,10 +40,12 @@
 
     gap: 20px;
     @media screen and (min-width: 768px){
+        top: -304px;
         gap: 16px;
         margin-bottom: 60px;
     }
     @media screen and (min-width: 1200px){
+        top: -96px;
         gap: 32px;
         margin-bottom: 76px;
     }
@@ -26,6 +53,7 @@
 }
 .contacts-information-list__item{
     display: block;
+    
     width: 100%;
 
     padding-top: 40px;
@@ -51,12 +79,22 @@
     }
 }
 .contacts-location-list{
+    position: relative;
     margin-bottom: 24px;
     padding-bottom: 24px;
     @media screen and (min-width: 768px){
         margin-bottom: 32px;
         padding-bottom: 32px;
     }
+}
+.contacts-location-list::after{
+    position: absolute;
+    content: " ";
+    display: block;
+    
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #E1E1E1;
 }
 .contacts-location-list__item-name{
     display: inline-block;
@@ -149,6 +187,7 @@
     }
 }
 .contacts-opening_hours-list{
+    position: relative;
     margin-bottom: 24px;
     padding-bottom: 24px;
     
@@ -156,6 +195,22 @@
         margin-bottom: 32px;
         padding-bottom: 32px;
     }
+}
+.contacts-opening_hours-list::after{
+    position: absolute;
+        content: " ";
+        display: block;
+    
+        bottom: 0;
+        width: 100%;
+        border: 1px solid #E1E1E1;
+}
+.contacts-opening_hours-box-weekdays{
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+            margin-bottom: 12px;
+            
+        }
 }
 .contacts-opening_hours-list__item-days{
     font-family: var(--front-font);
