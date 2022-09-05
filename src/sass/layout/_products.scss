@@ -6,6 +6,17 @@
     url(../images/products/products-bg-mobile-3.png);
     background-position: top center, center center, bottom center;
     background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .products {
+    background-image: url(../images/products/products-bg-mobile-1@2x.png),
+        url(../images/products/products-bg-mobile-2@2x.png),
+        url(../images/products/products-bg-mobile-3@2x.png);
+  }
 }
 
 .products-description {
