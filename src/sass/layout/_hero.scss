@@ -4,7 +4,7 @@
 
 .hero__container {
     position: relative;
-    padding-top: 110px;
+    padding-top: 61px;
     padding-bottom: 239px;
     background-image: url(../images/hero/hero_bg_Mobaile.png);
     background-repeat: no-repeat;
@@ -87,6 +87,110 @@
     display: flex;
     column-gap: 8px;
 }
+
+// product
+.hero__link-transparent {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.125;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 64px;
+    height: 24px;
+
+    padding: 12px 6px;
+
+    color: var(--bnt-dark-text-color);
+    border: 2px solid var(--btn-defolt-bg-color);
+    border-radius: 8px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border: 2px solid var(--btn-hover-bg-color);
+        cursor: url('/src/images/cursor/Cursor.png'), auto;
+    }
+
+    &:focus {
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 1.2;
+        color: #ffffff;
+        cursor: url('/src/images/cursor/Cursor.png'), auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2857;
+
+        min-width: 138px;
+        height: 42px;
+
+        padding: 12px 36px;
+
+        border-radius: 10px;
+
+        &:focus {
+            font-weight: 600;
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+    }
+}
+
+// how its made?
+.hero__all-transparent {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+
+    border: transparent;
+
+    color: var(--btn-defolt-bg-color);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: var(--btn-hover-bg-color);
+        cursor: url('/src/images/cursor/Cursor.png'), auto;
+    }
+
+    &:focus {
+        font-weight: 600;
+        font-size: 8px;
+        color: #ffffff;
+        line-height: 1.2;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.214;
+
+
+        &:focus {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.2;
+            color: #ffffff;
+        }
+    }
+}
+
 
 .hero__btn-all-transparent_size {
     @media screen and (max-width: 1199px) {
@@ -197,7 +301,6 @@
         filter: drop-shadow(0px 0px 35px rgba(10, 136, 23, 0.44))
     }
 }
-
 
 .hero__numbers-info {
     @media screen and (max-width: 767px) {
