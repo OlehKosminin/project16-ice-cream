@@ -10,8 +10,6 @@
     margin-left: auto;
     background-color: #84A178;
     padding-top: 12px;
-    
-
     @media screen and (max-width: 767px) {
         .mobile-menu-open {
             background-color: transparent;
@@ -72,5 +70,25 @@
                 color: var(--acent-color);
             }
         }
+    }
+}
+.mobile-menu-open__icon {
+    background-color: #84A178;
+}
+.logo {
+    padding: 0;
+    margin: 0;
+    
+}
+.logo_svg {
+    width: 37px;
+    height: 41px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 44px;
+        height: 48px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+        height: 65px;
     }
 }

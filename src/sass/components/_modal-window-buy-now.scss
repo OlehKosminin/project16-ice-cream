@@ -11,11 +11,10 @@
     @media screen and (max-width: 1199px) {
         overflow-y: scroll;
     }
-    
     @media screen and (min-width: 768px) {
         width: 568px;
+        top: 350px;
     }
-
 }
 .modal-image-gread {
     display: flex;
