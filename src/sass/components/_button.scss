@@ -24,12 +24,14 @@
 
   &:hover {
     border: 2px solid var(--btn-hover-bg-color);
+    cursor: url('/src/images/cursor/Cursor.png'), auto;
   }
 
   &:focus {
     font-weight: 700;
     font-size: 9px;
     line-height: 1.2;
+    cursor: url('/src/images/cursor/Cursor.png'), auto;
   }
   @media screen and (min-width: 1200px) {
     font-weight: 600;
@@ -73,6 +75,7 @@
 
   &:hover {
     color: var(--btn-hover-bg-color);
+    cursor: url('/src/images/cursor/Cursor.png'), auto;
   }
 
   &:focus {
@@ -120,12 +123,14 @@
   &:hover {
     background-color: var(--btn-hover-bg-color);
     border: 2px solid var(--btn-hover-bg-color);
+    cursor: url('/src/images/cursor/Cursor.png'), auto;
   }
 
   &:focus {
     font-weight: 700;
     font-size: 15px;
     line-height: 1.2;
+    cursor: url('/src/images/cursor/Cursor.png'), auto;
   }
 }
 
@@ -195,9 +200,11 @@
 
   &:hover {
     border: 2px solid var(--btn-hover-bg-color);
+    cursor: url('/src/images/cursor/Cursor.png'), auto;
   }
 }
 
 .btn__symbol__light {
   margin-left: 12px;
+  cursor: url('/src/images/cursor/Cursor.png'), auto;
 }
