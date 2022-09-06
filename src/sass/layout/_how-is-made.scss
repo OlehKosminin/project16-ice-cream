@@ -1,0 +1,128 @@
+.how-made {
+    background: var(--section-bg-color);
+}
+
+.how-made__container {
+    padding-top: 60px;
+}
+
+.how-made__subtitle {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22/18);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.how-made__title {
+    width: 200px;
+    margin: 0 auto 32px;
+
+    font-family: 'Seymour One';
+    font-size: 30px;
+    text-align: center;
+    line-height: calc(38/30);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width:768px) {
+        width: 100%;
+        margin: 0 auto 72px;
+    }
+}
+
+.how-made__content {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        column-gap: 100px;
+    }
+}
+
+.how-made__content-img {
+    position: relative;
+    width: 278px;
+    height: 278px;
+    margin: 0 auto 61px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+        width: 334px;
+        height: 334px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+.how-made__img {
+    position: absolute;
+    bottom: -22px;
+}
+
+.how-made__text-body {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 48px;
+    }
+
+}
+
+.how-made__text {
+    max-width: 220px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(21/12);
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    &:not(:last-child) {
+        padding-bottom: 8px;
+    }
+
+    @media screen and (max-width: 767px) {
+        &:last-child {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 334px;
+        text-align: left;
+        margin: 0;
+
+        &:last-child {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        //width: 463px;
+        font-size: 16px;
+        line-height: calc(28/16);
+    }
+}
+
+.how-made__btn {
+    width: 164px;
+    margin: 0 auto;
+    justify-content: center;
+
+
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
+}
