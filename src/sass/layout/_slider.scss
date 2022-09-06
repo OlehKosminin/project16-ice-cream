@@ -53,6 +53,9 @@
 .swiper-pagination-bullet-active {
   background-color: #84a178;
 }
+.swiper-slide, .swiper-slide-active{
+  margin-top: 0px;
+}
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   color: #84a178;
@@ -73,6 +76,9 @@
   .conteiner {
     padding-top: 106px;
   }
+  .swiper {
+    margin-top: 75px;
+  }
   .picture-ice {
     position: relative;
   }
@@ -83,8 +89,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7.40681px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-      drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   }
   .swiper {
     margin-top: 80px;
@@ -133,7 +138,7 @@
     padding-bottom: 384px;
   }
   .swiper {
-    margin-top: 109px;
+    margin-top: 218px;
   }
   .picture-ice {
     position: relative;
@@ -175,11 +180,15 @@
     height: 100%;
     background-size: cover;
     padding-bottom: 207px;
+
+  .swiper{
+    margin-top: 451px;
   }
   .phto-ice {
     position: absolute;
     max-width: 100%;
-    top: 0px;
+    top: 117px;
+
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 24px;
@@ -206,12 +215,4 @@
   }
 }
 
-// .phto-ice {
-//   width: 279px;
-//   @media screen and (min-width: 768px) {
-//     width: 704px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     width: 1013px;
-//   }
-// }
+
