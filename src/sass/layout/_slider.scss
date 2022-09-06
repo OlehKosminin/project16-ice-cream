@@ -53,6 +53,9 @@
 .swiper-pagination-bullet-active {
   background-color: #84a178;
 }
+.swiper-slide, .swiper-slide-active{
+  margin-top: 0px;
+}
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   color: #84a178;
@@ -72,6 +75,9 @@
   }
   .conteiner {
     padding-top: 106px;
+  }
+  .swiper {
+    margin-top: 75px;
   }
   .picture-ice {
     position: relative;
@@ -131,7 +137,7 @@
     padding-bottom: 384px;
   }
   .swiper {
-    margin-top: 109px;
+    margin-top: 218px;
   }
   .picture-ice {
     position: relative;
@@ -175,7 +181,7 @@
     padding-bottom: 207px;
   }
   .swiper{
-    margin-top: 270px;
+    margin-top: 451px;
   }
   .phto-ice {
     position: absolute;
