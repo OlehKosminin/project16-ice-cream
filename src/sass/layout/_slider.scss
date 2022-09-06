@@ -53,10 +53,7 @@
 .swiper-pagination-bullet-active {
   background-color: #84a178;
 }
-
-.swiper-slide,
-.swiper-slide-active {
-
+.swiper-slide, .swiper-slide-active{
   margin-top: 0px;
 }
 .swiper-button-next:after,
@@ -93,6 +90,9 @@
     transform: translate(-50%, -50%);
     border-radius: 7.40681px;
 
+  }
+  .swiper {
+    margin-top: 80px;
   }
 
   .content-photo {
@@ -184,13 +184,11 @@
   .swiper{
     margin-top: 451px;
   }
-  .swiper {
-    margin-top: 451px;
-  }
   .phto-ice {
     position: absolute;
     max-width: 100%;
     top: 117px;
+
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 24px;
@@ -216,4 +214,5 @@
     margin-bottom: 36px;
   }
 }
+
 
