@@ -83,12 +83,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7.40681px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    box-shadow:  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  .swiper {
-    margin-top: 80px;
-  }
+ 
 
   .content-photo {
     display: flex;
@@ -176,10 +174,13 @@
     background-size: cover;
     padding-bottom: 207px;
   }
+  .swiper{
+    margin-top: 270px;
+  }
   .phto-ice {
     position: absolute;
     max-width: 100%;
-    top: 0px;
+    top: 105px;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 24px;
