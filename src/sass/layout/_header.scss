@@ -1,7 +1,7 @@
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header {
     // position: absolute;
@@ -26,51 +26,60 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-        }
+      line-height: 0;
+
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        .mobile-menu-open {
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            line-height: 0;
-            margin-right: 31px;
-            margin-left: auto;
-        }
-        .site-nav {
-            display: none;
-        }
-        
+    .site-nav,
+    .btn-bg__buy-now_desk-tablet {
+      display: none;
     }
-    @media screen and (min-width: 1200px) {
-        
-        .mobile-menu-open {
-            display: none;
-        }
-        .site-nav {
-            margin-right: 146px;
-            margin-left: auto;
-        }
-        .site-nav__list {
-            display: flex;
-        }
-        .site-nav__items:not(:first-child) {
-            margin-left: 27px;
-        }
-        .site-nav__links {
-            color: var(--text-color-light);
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.25;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover,
-            &:focus {
-                color: var(--acent-color);
-            }
-        }
+    .btn-bg__buy-now_mobile-menu {
+      margin-top: 40px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .mobile-menu-open {
+      border: none;
+      padding: 0;
+      line-height: 0;
+      margin-right: 31px;
+      margin-left: auto;
+    }
+    .site-nav {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .mobile-menu-open {
+      display: none;
+    }
+    .site-nav {
+      margin-right: 146px;
+      margin-left: auto;
+    }
+    .site-nav__list {
+      display: flex;
+    }
+    .site-nav__items:not(:first-child) {
+      margin-left: 27px;
+    }
+    .site-nav__links {
+      color: var(--text-color-light);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.25;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: var(--acent-color);
+      }
+    }
+  }
 }
 .mobile-menu-open__icon {
     background-color: #84A178;
