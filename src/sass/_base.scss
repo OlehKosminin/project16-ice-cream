@@ -83,3 +83,13 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.backdrop {
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
