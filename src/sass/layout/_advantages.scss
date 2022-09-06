@@ -1,0 +1,131 @@
+.section_advantages-padding {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.section_advanteges-background {
+  background-color: var(--section-bg-color);
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  .advantages-list__item {
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.advantages-list__item::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  background-color: var(--acent-color);
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages-list__item_background-cow.advantages-list__item::before {
+  background-image: url('../images/advantages/cow.svg');
+}
+
+.advantages-list__item_background-weight.advantages-list__item::before {
+  background-image: url('../images/advantages/weight.svg');
+}
+
+.advantages-list__item_background-icecream.advantages-list__item::before {
+  background-image: url('../images/advantages/ice-cream.svg');
+}
+
+.advantages-list__accent-text {
+  margin-bottom: 18px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.advantages-list__description-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+// ======= TABLET =======
+
+@media screen and (min-width: 768px) {
+  .section_advantages-padding {
+    padding-bottom: 205px;
+  }
+
+  .advanteges-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .advantages-list__item {
+    max-width: 152px;
+  }
+
+  .advantages-list__item::before {
+    margin-bottom: 32px;
+  }
+
+  .advantages-list__accent-text {
+    margin-bottom: 16px;
+
+    font-size: 48px;
+    line-height: 1.23;
+  }
+
+  .advantages-list__description-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
+
+// ======= DESCTOP =======
+
+@media screen and (min-width: 1200px) {
+  .section_advantages-padding {
+    padding-bottom: 247px;
+  }
+
+  .advanteges-list {
+    gap: 32px;
+  }
+
+  .advantages-list__item {
+    max-width: 368px;
+  }
+
+  .advantages-list__item::before {
+    margin-bottom: 40px;
+  }
+
+  .advantages-list__accent-text {
+    font-size: 58px;
+    line-height: 1.22;
+  }
+
+  .advantages-list__description-text {
+    font-size: 16px;
+    line-height: 1.76;
+
+    letter-spacing: 0.02em;
+  }
+}
