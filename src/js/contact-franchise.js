@@ -1,8 +1,8 @@
 (() => {
     const refs = {
-    openModalBtn: document.querySelectorAll(".click-buy-now"),
-    closeModalBtn: document.querySelector("[data-modal-close-buy-now]"),
-    modal: document.querySelector("[data-modal-buy-now]"),
+    openModalBtn: document.querySelectorAll(".data-modal-franchise-open"),
+    closeModalBtn: document.querySelector("[data-modal-franchise-close]"),
+    modal: document.querySelector("[data-modal-franchise]"),
     body: document.querySelector('body'),
     };
     refs.openModalBtn.forEach(item => {
@@ -12,7 +12,7 @@
     refs.closeModalBtn.addEventListener('click', toggleModal);
     
     function toggleModal() {
-        refs.modal.classList.toggle('is-hidden-buy-now');
+        refs.modal.classList.toggle('is-hidden');
         // refs.body.classList.toggle('no-scroll');
     }
 })();

@@ -53,8 +53,10 @@
 .swiper-pagination-bullet-active {
   background-color: #84a178;
 }
+
 .swiper-slide,
 .swiper-slide-active {
+
   margin-top: 0px;
 }
 .swiper-button-next:after,
@@ -90,6 +92,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7.40681px;
+
   }
 
   .content-photo {
@@ -177,6 +180,9 @@
     height: 100%;
     background-size: cover;
     padding-bottom: 207px;
+
+  .swiper{
+    margin-top: 451px;
   }
   .swiper {
     margin-top: 451px;
@@ -210,3 +216,4 @@
     margin-bottom: 36px;
   }
 }
+
