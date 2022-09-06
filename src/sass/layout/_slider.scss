@@ -89,8 +89,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7.40681px;
+
   }
- 
+  .swiper {
+    margin-top: 80px;
+  }
 
   .content-photo {
     display: flex;
@@ -177,7 +180,7 @@
     height: 100%;
     background-size: cover;
     padding-bottom: 207px;
-  }
+
   .swiper{
     margin-top: 451px;
   }
@@ -185,6 +188,7 @@
     position: absolute;
     max-width: 100%;
     top: 117px;
+
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 24px;

@@ -35,15 +35,15 @@
 }
 
 .advantages-list__item_background-cow.advantages-list__item::before {
-  background-image: url('../images/advantages/cow.png');
+  background-image: url('../images/advantages/cow.svg');
 }
 
 .advantages-list__item_background-weight.advantages-list__item::before {
-  background-image: url('../images/advantages/weight.png');
+  background-image: url('../images/advantages/weight.svg');
 }
 
 .advantages-list__item_background-icecream.advantages-list__item::before {
-  background-image: url('../images/advantages/ice-cream.png');
+  background-image: url('../images/advantages/ice-cream.svg');
 }
 
 .advantages-list__accent-text {
@@ -102,7 +102,7 @@
 
 @media screen and (min-width: 1200px) {
   .section_advantages-padding {
-    padding-bottom: 180px;
+    padding-bottom: 247px;
   }
 
   .advanteges-list {
