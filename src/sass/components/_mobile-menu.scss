@@ -1,6 +1,7 @@
 .mobile-menu {
   position: fixed;
   width: 100%;
+
   height: 100vw;
 
   z-index: 999;
@@ -27,7 +28,9 @@
 }
 .mobile-menu__container {
   position: relative;
-  height: 100%;
+
+  height: 100vh;
+
   background-color: #85a279;
   padding-top: 100px;
   display: block;
@@ -64,7 +67,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
   .mobile-menu__close-btn {
     top: 16px;
     right: 14px;
@@ -82,6 +84,9 @@
     display: none;
   }
   .logo-mobile {
+
+    fill: #f8d24e;
+
     position: absolute;
     top: 20px;
     left: 32px;
@@ -90,5 +95,4 @@
     top: 32px;
     right: 32px;
   }
-
 }
