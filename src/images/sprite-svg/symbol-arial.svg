@@ -12,10 +12,8 @@
 <path  d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
 <path  d="M20.446 15.982h-2.61v9.619h-3.955v-9.619h-1.881v-3.38h1.881v-2.187c0-1.564 0.739-4.014 3.99-4.014l2.929 0.012v3.281h-2.125c-0.349 0-0.839 0.175-0.839 0.921v1.989h2.955l-0.346 3.377z"></path>
 </symbol>
-<symbol id="burger" viewBox="0 0 50 32">
-<path  stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 2.286h45.714"></path>
-<path  stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 16h45.714"></path>
-<path  stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 29.714h45.714"></path>
+<symbol id="burger">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
 </symbol>
 
 <symbol id="icelogo" viewBox="0 0 35 32" >
