@@ -84,9 +84,13 @@
 .mobile-menu-open__icon {
     background-color: #84A178;
 }
+.mobile-menu-open {
+    fill: #fff;
+}
 .logo {
     padding: 0;
     margin: 0;
+    fill:#f8d24e;
 }
 .logo_svg {
     width: 37px;
@@ -94,9 +98,11 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 44px;
         height: 48px;
+        fill:#f8d24e;
     }
     @media screen and (min-width: 1200px) {
         width: 60px;
         height: 65px;
+        fill:#f8d24e;
     }
 }
