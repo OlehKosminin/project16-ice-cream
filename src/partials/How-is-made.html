@@ -1,4 +1,4 @@
-<section class="how-made">
+<section id="how-made" class="how-made">
     <div class="container how-made__container">
         <p class="how-made__subtitle">tradition and love</p>
         <h2 class="how-made__title">how it’s made?</h2>
@@ -19,7 +19,6 @@
                     </picture>
                 </div>
             </li>
-
             <li class="how-made__part-content">
                 <div class="how-made__text-body">
                     <p class="how-made__text">Ice is a place where you will become not only a little happier, but also
@@ -37,11 +36,31 @@
                     </p>
                     <p class="how-made__text">This is enough to choose ice cream and coffee for any mood!</p>
                 </div>
-                <button class="btn-bg__our-lock how-made__btn" type="button">
+                <button class="btn-bg__our-lock how-made__btn" type="button" data-modal-made-open>
                     <span>Read more</span> <span class="btn__symbol-our-lock">&#62;</span>
                 </button>
             </li>
         </ul>
     </div>
-
 </section>
+
+<div class="backdrop-made is-hiden-made" data-modal-made>
+    <div class="modal-made">
+        <button type="button" class="modal-close-btn" data-modal-made-close>
+            <svg class="modal-close-btn__icon">
+                <use href="./images/sprite-svg/symbol-arial.svg#close-btn"></use>
+            </svg>
+        </button>
+        <h2 class="madal-made__title">
+            How it’s made?
+        </h2>
+        <iframe class="madal-made__video" src="https://www.youtube.com/embed/zagD0LQdsDE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p class="madal-made__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </p>
+    </div>
+</div>
