@@ -2,17 +2,24 @@
     z-index: 1000;
     width: 100%;
     height: 100%;
-    transition: opacity var(--transition-duration),
-        visibility var(--transition-duration);
-    transition-duration: var(--transition-duration);
+    transition: opacity var(--cubik-bezier),
+        visibility var(--cubik-bezier);
     background-color: rgba(0, 0, 0, .2);
-    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     position: fixed;
     top: 0;
     left: 0;
     overflow-y: scroll;
+
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
 }
 
+.backdrop-products.is-hidden-products {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
 
 .modal-products {
     width: 280px;
@@ -189,10 +196,4 @@
     display: block;
     margin: 0 auto;
     text-align: center;
-}
-
-.is-hidden {
-    visibility: hidden;
-    opacity:0;
-    pointer-events: none;
 }
