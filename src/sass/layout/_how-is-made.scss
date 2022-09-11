@@ -151,9 +151,11 @@
 }
 
 .modal-made {
-  @media screen and(max-width:767px) {
-    top: 500px;
-  }
+
+  // @media screen and(max-width:767px) {
+  //   top: 500px;
+  // }
+
   width: 280px;
   background: #fff;
   border: 2px solid #f8d24e;
